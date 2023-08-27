@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="control">
+        <button style="margin: 20px;" id="themeBtn">
+            Theme
+        </button>
+    </div>
+
+    <div id="calculator">
+        <input type="number" id="inputBytes" placeholder="Enter bytes">
+        <button id="convertButton">Convert</button>
+        <p>Result: <span id="result"></span></p>
+    </div>
+
+    <div class="timeBox">
+        <h1 id="momentTime"></h1>
+    </div>
+
+    <script type="module" src="./currentTime.js" defer></script>
+    <script src="./theme.js"></script>
+    <script src="./calculator.js"></script>
+     
+</body>
+</html>
